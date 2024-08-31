@@ -2,17 +2,14 @@ import numpy as np
 import pandas as pd
 from interfaccia import automatic, dashboard
 
-
-# Imposta il seme per la riproducibilità
 np.random.seed(0)
-
 # generation random number
 x = np.arange(0, 100)
 y = np.random.normal(size=100)
 z = np.random.uniform(1, 10, size=100)
 w = np.random.binomial(n=10, p=0.5, size=100)
 
-# Creazione dei DataFrame
+# df
 df1 = pd.DataFrame({'x': x, 'y': y, 'z': z, 'w': w})
 df2 = pd.DataFrame(
     {'Category': np.random.choice(['A', 'B', 'C', 'D'], size=50), 'Values': np.random.randint(1, 10, size=50)})
@@ -45,11 +42,11 @@ chart_2, table_2 = automatic(
     df2,  # name of the df with the data
     columns=[
         ('Category', 'Values', 'pie Chart', 'pie')
-        # ('X axes column name',  'Y axes column name', 'name on legend', 'chart type', 'add_y') If you want to add the secondary y or x axis, just insert 'add_y' or 'add_x' at the end.
+        # ('X axis column name',  'Y axis column name', 'name on legend', 'chart type', 'add_y') If you want to add the secondary y or x axis, just insert 'add_y' or 'add_x' at the end.
     ],
     title='Lorem ipsum...',  # title on chart, If you don't want the axis to appear, simply leave it blank.
-    xaxis_title='Category',  # title on X axes, If you don't want the axis to appear, simply leave it blank.
-    yaxis_title='Values',  # title on Y axes, If you don't want the axis to appear, simply leave it blank.
+    xaxis_title='Category',  # title on X axis, If you don't want the axis to appear, simply leave it blank.
+    yaxis_title='Values',  # title on Y axis, If you don't want the axis to appear, simply leave it blank.
     note='Lorem ipsum dolor sit amet....'  # note chart, If you don't want the axis to appear, simply leave it blank.
 )
 
@@ -60,8 +57,8 @@ chart_3, table_3 = automatic(
         ('Category', 'Count', 'Count Data', 'bar')  # Assuming columns in df3 are 'Category' and 'Count', and using a 'bar' chart.
     ],
     title='',  # title on chart, If you don't want the axis to appear, simply leave it blank.
-    xaxis_title='Category',  # title on X axes, If you don't want the axis to appear, simply leave it blank.
-    yaxis_title='Count',  # title on Y axes, If you don't want the axis to appear, simply leave it blank.
+    xaxis_title='Category',  # title on X axis, If you don't want the axis to appear, simply leave it blank.
+    yaxis_title='Count',  # title on Y axis, If you don't want the axis to appear, simply leave it blank.
     note='Lorem ipsum dolor sit amet...'  # note chart, If you don't want the axis to appear, simply leave it blank.
 )
 
@@ -69,7 +66,7 @@ chart_4, table_4 = automatic(
     df4,  # name of the df with the data
     columns=[
         ('x', 'y', 'Sine Function', 'scatter'),
-        ('x', 'z', 'Cosine Function', 'scatter', 'add_y')  # Usa l'asse y secondario
+        ('x', 'z', 'Cosine Function', 'scatter', 'add_y')  # add y axis
     ],
     title='',
     xaxis_title='X Axis',
@@ -86,7 +83,7 @@ data = {  # data is the container where the dashboard filling data is stored.
         # subtitle on the navebar,If you don't want the axis to appear, simply leave it blank.
         'menu_items': [  # pages on the navbar menu'
             {'id': 'home', 'label': 'Home'},
-            # You can choose not to include 'Home' as a menu item because the title acts as a button for the home page. Id should be unique
+            # You can choose not to include 'Home' as a menu item because the title acts as a button for the home page. Id should be unique NOT STABLE
             {'id': 'abc', 'label': 'Page'},  # single page on menù. Id should be unique
             {'id': 'abcd', 'label': 'Drop menù', 'submenu': [  # page with subpage on menù, Id should be unique
                 {'id': 'abcde', 'label': 'page 1'},  # subpage 1, Id should be unique
@@ -104,7 +101,7 @@ data = {  # data is the container where the dashboard filling data is stored.
             'contents': [  # contaneir for the content page
                 {"type": "home",  # type of layout page
                  "id": "Home",  # Id page
-                 "content": '<p>'  # text on the home page
+                 "content": '<p>'  # text on the home page 
                             'This <a href="https://github.com/fr-cm/interfaccia">repository</a>'
                             ' is designed to streamline the process of creating a modular, multi-device '
                             'dashboard with simulated interactivity while minimizing Python code. '
@@ -112,7 +109,8 @@ data = {  # data is the container where the dashboard filling data is stored.
                             'and it provides automatic download links for CSV files, allowing users to '
                             'download data without the need for server storage. Additionally, it addresses'
                             ' the issue of resizing Plotly charts when display is set to none. Check out the '
-                            'pages below to explore its various features and capabilities.</p>'}
+                            'pages below to explore its various features and capabilities.
+                            '</p>'}
             ]
         },
         {
