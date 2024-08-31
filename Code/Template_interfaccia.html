@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaccia</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS  -->
+    <style>
+        /* Reset globale */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+/* Stili generali per tutti i dispositivi */
+h2 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+
+.page{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+
+.table-scrollable {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+}
+
+/* Stili pulsanti */
+.content-row button {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.5rem 1rem;
+    background-color: #273898;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.content-row button:hover {
+    background-color: #4f72b5e0;
+}
+
+.content-row button:active {
+    background-color: #0b5ed7;
+}
+
+.img1 {
+  display: flex;
+  margin: 0 auto;
+  max-width: 60rem;
+  text-align: center;
+  justify-content: center;
+}
+.img2 {
+  display: flex;
+  margin: 0 auto;
+  max-width: 35rem;
+  text-align: center;
+  justify-content: center;
+  padding-right: 1rem;
+}
+
+/* ####################### NAVBAR ############################# */
+.navbar {
+    font-family: 'Gotham', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navbar desktop */
+@media (min-width: 769px) {
+    .navbar-nav .nav-link,
+    .navbar-brand {
+        font-weight: bold;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+        line-height: 1;
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .text-muted {
+        font-size: 14px;
+        font-style: italic;
+        line-height: 0.3;
+        display: block;
+        margin-top: 0.1rem;
+        color: #8ca5d4;
+    }
+
+    .dropdown-menu {
+        border-radius: 0;
+        background-color: #00379f;
+        border: none;
+        margin-top: 0;
+    }
+
+    .dropdown-item {
+        color: white;
+        border-radius: 0.3125rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .dropdown:hover .dropdown-toggle::after {
+        transform: rotate(-180deg);
+        transition: transform 0.3s ease;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        background-color: #4f72b5e0;
+        color: white;
+    }
+
+    .content-row .row {
+        display: flex;
+        align-items: stretch;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-row .col-md-7,
+    .content-row .col-md-5 {
+        display: flex;
+        flex-direction: column;
+        padding-right: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*############# Navbar mobile################## */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        border-radius: 0;
+        background-color: #00379f;
+        border: none;
+        margin-top: 0;
+    }
+
+    .dropdown-item {
+        color: white;
+        border-radius: 0.3125rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .dropdown:hover .dropdown-toggle::after {
+        transform: rotate(-180deg);
+        transition: transform 0.3s ease;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        background-color: #4f72b5e0;
+        color: white;
+    }
+
+
+    .navbar-toggler {
+        border: 0;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar-brand{
+        display: block;
+        font-size: 1rem;
+        font-style: bold;
+        display: block;
+        margin-top: 0.1rem;
+    }
+    .text-muted {
+        display: block;
+        font-size: 0.8rem;
+        font-style: italic;
+        line-height: initial;
+        display: block;
+        margin-top: 0.1rem;
+        color: #8ca5d4;
+    }
+}
+
+/* ####################### SEZIONE HOME ############################# */
+.home {
+    display: flex;
+    padding-block-start: 8rem;
+    padding-block-end: 12rem;
+    padding-left: 7rem;
+    padding-right: 8.5rem;
+}
+
+.image-section-home {
+    margin-right: 3rem;
+}
+
+.text-section-home {
+    padding-left: 4rem;
+    text-align: justify;
+}
+
+.text-section-home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.text-section-home p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+/* Stili comuni per .scroll-down */
+.scroll-down {
+    display: block;
+    margin-top: 0.2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #00379f;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Home mobile */
+@media (max-width: 768px) {
+    .home {
+        margin-block-start: 6.5rem !important;
+        padding: 1rem !important;
+    }
+
+    .image-section-home {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .image-section-home img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .text-section-home {
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .text-section-home h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+
+    }
+
+    .text-section-home p {
+        font-size: 1.1rem;
+        line-height: 1.4;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .scroll-down {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* ####################### PAGINA GRAFICI ############################# */
+.graph-table-page {
+    padding: 2rem;
+}
+
+/* ############ Dropdown selezione grafici ############ */
+.selection-row {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.selection-row .form-select {
+    margin-left: 0rem;
+    width: 48%;
+    padding: 0.3rem;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #495057;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-select {
+    font-weight: 620;
+    text-align: center;
+}
+
+.selection-row .form-select:focus {
+    border-color: #e9ecef;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.text p{
+    margin-right: 3.2rem;
+    margin-left: 3.2rem;
+    text-align: justify;
+    }
+
+.text1 p{
+    margin-right: 3.2rem;
+    text-align: justify;
+    }
+.text1 h2{
+    margin-right: 3.2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    }
+.text1 h1{
+    margin-right: 3.2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    }
+.text1 h3{
+    margin-right: 3.2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    }
+
+
+.text3 p{
+    margin-left: 3.2rem;
+    text-align: justify;
+    }
+.text3 h2{
+    margin-left: 3.2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    }
+.text3 h1{
+    margin-left: 3.2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    }
+.text3 h3{
+    margin-left: 3.2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    }
+
+/* Stili per schermi piccoli (mobile) */
+@media only screen and (max-width: 768px) {
+    .annotation-text {
+        font-size: 8px; /* Ridimensiona il testo per il mobile */
+    }
+
+    .bg {
+        height: 16px; /* Riduci l'altezza del rettangolo di sfondo */
+        width: 100%; /* Adatta la larghezza del rettangolo di sfondo */
+    }
+}
+
+/* ############ Dropdown per mobile ############*/
+@media (max-width: 768px) {
+    .selection-row .form-select {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+        width: 100%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    h2 {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        text-align: center;
+    }
+    h1 {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        text-align: justify;
+    }
+    .text p{
+       margin-right: 1rem;
+       margin-left: 1rem;
+       text-align: justify;
+    }
+    .text1 p{
+       margin-right: 1rem;
+       margin-left: 1rem;
+       text-align: justify;
+    }
+    .text1 h2{
+       margin-right: 1rem;
+       margin-left: 1rem;
+       text-align: center;
+    }
+    .text1 h1{
+       margin-right: 1rem;
+       margin-left: 1rem;
+       text-align: center;
+    }
+
+
+    .text2 p{
+       margin-right: 1rem;
+       margin-left: 1rem;
+       text-align: justify;
+    }
+    .text2 h2{
+       margin-right: 1rem;
+       margin-left: 1rem;
+       text-align: center;
+    }
+    .text2 h1{
+       margin-right: 1rem;
+       margin-left: 1rem;
+       text-align: center;
+    }
+
+    .text3 p{
+       margin-right: 1rem;
+       margin-left: 1rem;
+       text-align: justify;
+    }
+    .text3 h2{
+       margin-right: 1rem;
+       margin-left: 1rem;
+       text-align: center;
+    }
+    .text3 h1{
+       margin-right: 1rem;
+       margin-left: 1rem;
+       text-align: center;
+    }
+}
+
+
+/* ####################### TABLE ############################# */
+
+.table-container {
+       overflow-y: auto; /* Abilita lo scorrimento verticale su dispositivi mobili */
+       max-height: 20rem; /* Limita l'altezza massima della tabella per scorrimento verticale */
+       width: 100%;
+       overflow-x: auto;
+       margin-bottom: 1rem;
+       margin-top: 3rem;
+
+    }
+
+.table-container table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-collapse: collapse;
+    border: 0;
+}
+
+.table-container th,
+.table-container td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+}
+
+.table-container th {
+    border-top: 0;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table-container tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* ############ Scrollbar personalizzata ############ */
+.table-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    height: 20%;
+    min-height: 1rem;
+}
+
+
+
+.table-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.table-container::-webkit-scrollbar-thumb:active {
+    background-color: #808080;
+}
+.col-sm-12.col-md-5.table-scrollable {
+    max-height: 10rem; /* Limita l'altezza massima per lo scroll verticale */
+    overflow-y: auto; /* Abilita lo scorrimento verticale */
+    display: flex;
+
+    }
+
+/* ############Table mobile ############ */
+@media (max-width: 768px) {
+    .row.graph-page {
+        padding-bottom: 2rem;
+    }
+
+
+
+    .table-container th,
+    .table-container td {
+        white-space: nowrap;
+    }
+}
+
+
+    </style>
+
+</head>
+<body>
+
+<!-- nav-bar menu -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #00379f;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#paginaHome">{{ data.navbar.brand_name }}
+            <small class="text-muted">{{ data.navbar.subtitle }}</small>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                {% for menu_item in data.navbar.menu_items %}
+                    {% if menu_item.submenu is defined %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="{{ menu_item.id }}Dropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            {{ menu_item.label }}
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="{{ menu_item.id }}Dropdown">
+                            {% for submenu_item in menu_item.submenu %}
+                                <li><a class="dropdown-item" href="#{{ submenu_item.id }}">{{ submenu_item.label }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="#{{ menu_item.id }}">{{ menu_item.label }}</a>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- pages -->
+{% for page in data.pages %}
+
+    <!-- Home -->
+    {% if page.type == 'home' %}
+        <div id="{{ page.id }}" class="home" style="display:flex;">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <div class="image-section-home">
+                        <img src="{{ page.image_src }}" alt="Logo" style="max-width: 90%; height: auto">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="text-section-home">
+                        <h1>{{ page.title }}</h1>
+                        <p>{{ page.contents[0].content | safe }}</p>
+                    </div>
+                </div>
+                <div class="scroll-down">
+                    <a href="#next-section" class="scroll-down">
+                        &#x25BC;
+                    </a>
+                </div>
+                <div id="next-section" class="next-section"></div>
+            </div>
+        </div>
+
+    <!-- page_menu -->
+    {% elif page.type == 'page_menu' %}
+        <div id="{{ page.id }}" class="page-menu">
+            <h2>{{ page.title }}</h2>
+            <div id="content-page-{{ page.id }}">
+                <div class="selection-row">
+                    <select class="form-select" id="page-selector-{{ page.id }}"
+                            onchange="updateDisplay('{{ page.id }}', this.value)">
+                        {% for content in page.contents %}
+                            <option value="{{ content.id }}">{{ content.label }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="content-row" id="content-row-{{ page.id }}">
+                    {% for content in page.contents %}
+                    <div class="row" id="{{ content.id }}" style="display: {{ content.display }};">
+                        {% if content.type == 'plot' %}
+                        <div class="ridimensionamento col-md-12 col-sm-12 " style="align-items: center;">
+                            {{ content.plot | safe }}
+                        </div>
+                        {% elif content.type == 'html' %}
+                        <div class="html" >
+                            {{ content.html | safe }}
+                        </div>
+                        {% elif content.type == 'table' %}
+                        <div class="col-sm-12 col-md-12 table-large">
+                            <div class="table-container table-sm table-scrollable" border="0" index="false"
+                                 style="text-align: justify;    overflow-x: hidden; ">
+                                {{ content.data | safe }}
+                            </div>
+                        </div>
+                        {% elif content.type == 'txt' %}
+                        <div class="col-sm-12 col-ms-12 text">
+                            <h3>{{ content.title }}</h3>
+                            <p>{{ content.text | safe }}</p>
+                        </div>
+                        {% elif content.type == 'img' %}
+                        <div class="img1 col-sm-12 col-md-12">
+                            <img src="{{ content.image_src }}" alt="Image" style="max-width: 100%; height: auto;">
+                        </div>
+                        {% elif content.type == 'img_txt' %}
+                        <div class="img2 col-md-7 col-sm-12 ">
+                            <img src="{{ content.image_src }}" alt="Image" style="max-width: 100%; height: auto;">
+                        </div>
+                        <div class="col-md-5 col-sm-12 text1">
+                            <h2>{{ content.title }}</h2>
+                            <p>{{ content.text | safe }}</p>
+                        </div>
+                        {% elif content.type == 'txt_img' %}
+                        <div class="col-md-7 col-sm-12 text3">
+                            <h2>{{ content.title }}</h2>
+                            <p>{{ content.text | safe }}</p>
+                        </div>
+                        <div class="img2 col-md-5 col-sm-12 ">
+                            <img src="{{ content.image_src }}" alt="Image" style="max-width: 100%; height: auto;">
+                        </div>
+                        {% elif content.type == 'plot_table' %}
+                        <div class=" col-sm-12 col-md-7">
+                            {{ content.plot | safe }}
+                        </div>
+                        <div class="col-sm-12 col-md-5">
+                            <div class="table-container table-sm table-scrollable" border="0" index="false">
+                                {{ content.data | safe }}
+                            </div>
+                        </div>
+                        {% elif content.type == 'plot_table_download' %}
+                        <div class=" col-sm-12 col-md-7">
+                            {{ content.plot | safe }}
+                        </div>
+                        <div class="col-sm-12 col-md-5">
+                            <div class="table-container table-sm table-scrollable" border="0" index="false">
+                                {{ content.data | safe }}
+                            </div>
+                        </div>
+                        <div class="download">
+                            <button onclick="downloadCSV('{{ content.id }}')">Download</button>
+                        </div>
+                        {% elif content.type == 'plot_download' %}
+                        <div class=" graph col-sm-12 col-md-12" style="width:100%">
+                            {{ content.plot | safe }}
+                        </div>
+                        <div class="download">
+                            <button onclick="downloadCSV('{{ content.id }}')">Download</button>
+                        </div>
+                        {% elif content.type == 'plot_txt' %}
+                        <div class=" col-md-7 col-sm-12 ">
+                            {{ content.plot | safe }}
+                        </div>
+                        <div class=" col-md-5 col-sm-12 text1">
+                            <h3>{{ content.title }}</h3>
+                            <p>{{ content.text | safe }}</p>
+                        </div>
+                        {% elif content.type == 'plot_txt_download' %}
+                        <div class="col-md-7 col-sm-12 ">
+                            {{ content.plot | safe }}
+                        </div>
+
+                        <div class=" col-md-5 col-sm-12 text1">
+                            <h3>{{ content.title }}</h3>
+                            <p>{{ content.text | safe }}</p>
+                        </div>
+                        <div class="download">
+                            <button onclick="downloadCSV('{{ content.id }}')">Download</button>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+    <!-- page -->
+    {% elif page.type == 'page' %}
+        <div id="{{ page.id }}" class="page">
+        <h2>{{ page.title }}</h2>
+        <div id="content-page-{{ page.id }}">
+                <div class="content-row" id="content-row-{{ page.id }}">
+                    {% for content in page.contents %}
+                    <div class="row" id="{{ content.id }}" style="display: {{ content.display }};">
+                        {% if content.type == 'plot' %}
+                        <div class="ridimensionamento col-md-12 col-sm-12 " style="align-items: center;">
+                            {{ content.plot | safe }}
+                        </div>
+                        {% elif content.type == 'html' %}
+                        <div class="html" >
+                            {{ content.html | safe }}
+                        </div>
+                        {% elif content.type == 'table' %}
+                        <div class="col-sm-12 col-md-12 table-large">
+                            <div class="table-container table-sm table-scrollable" border="0" index="false"
+                                 style="text-align: justify;    overflow-x: hidden; ">
+                                {{ content.data | safe }}
+                            </div>
+                        </div>
+                        {% elif content.type == 'txt' %}
+                        <div class="col-sm-12 col-ms-12 text">
+                            <h3>{{ content.title }}</h3>
+                            <p>{{ content.text | safe }}</p>
+                        </div>
+                        {% elif content.type == 'img' %}
+                        <div class="img1 col-sm-12 col-md-12">
+                            <img src="{{ content.image_src }}" alt="Image" style="max-width: 100%; height: auto;">
+                        </div>
+                        {% elif content.type == 'img_txt' %}
+                        <div class="img2 col-md-7 col-sm-12 ">
+                            <img src="{{ content.image_src }}" alt="Image" style="max-width: 100%; height: auto;">
+                        </div>
+                        <div class="col-md-5 col-sm-12 text1">
+                            <h2>{{ content.title }}</h2>
+                            <p>{{ content.text | safe }}</p>
+                        </div>
+                        {% elif content.type == 'txt_img' %}
+                        <div class="col-md-7 col-sm-12 text3">
+                            <h2>{{ content.title }}</h2>
+                            <p>{{ content.text | safe }}</p>
+                        </div>
+                        <div class="img2 col-md-5 col-sm-12 ">
+                            <img src="{{ content.image_src }}" alt="Image" style="max-width: 100%; height: auto;">
+                        </div>
+                        {% elif content.type == 'plot_table' %}
+                        <div class=" col-sm-12 col-md-7">
+                            {{ content.plot | safe }}
+                        </div>
+                        <div class="col-sm-12 col-md-5">
+                            <div class="table-container table-sm table-scrollable" border="0" index="false">
+                                {{ content.data | safe }}
+                            </div>
+                        </div>
+                        {% elif content.type == 'plot_table_download' %}
+                        <div class=" col-sm-12 col-md-7">
+                            {{ content.plot | safe }}
+                        </div>
+                        <div class="col-sm-12 col-md-5">
+                            <div class="table-container table-sm table-scrollable" border="0" index="false">
+                                {{ content.data | safe }}
+                            </div>
+                        </div>
+                        <div class="download">
+                            <button onclick="downloadCSV('{{ content.id }}')">Download</button>
+                        </div>
+                        {% elif content.type == 'plot_download' %}
+                        <div class=" graph col-sm-12 col-md-12" style="width:100%">
+                            {{ content.plot | safe }}
+                        </div>
+                        <div class="download">
+                            <button onclick="downloadCSV('{{ content.id }}')">Download</button>
+                        </div>
+                        {% elif content.type == 'plot_txt' %}
+                        <div class=" col-md-7 col-sm-12 ">
+                            {{ content.plot | safe }}
+                        </div>
+                        <div class=" col-md-5 col-sm-12 text1">
+                            <h3>{{ content.title }}</h3>
+                            <p>{{ content.text | safe }}</p>
+                        </div>
+                        {% elif content.type == 'plot_txt_download' %}
+                        <div class="col-md-7 col-sm-12 ">
+                            {{ content.plot | safe }}
+                        </div>
+
+                        <div class=" col-md-5 col-sm-12 text1">
+                            <h3>{{ content.title }}</h3>
+                            <p>{{ content.text | safe }}</p>
+                        </div>
+                        <div class="download">
+                            <button onclick="downloadCSV('{{ content.id }}')">Download</button>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+    <!-- footer -->
+    {% elif page.type == 'footer' %}
+        <div id="{{ page.id }}" class="footer"
+         style="display: flex; background-color: #e7e8f2; justify-content: center; align-items: center; margin-top:3rem ; margin-left: 4rem; margin-right:4rem">
+        <div class="row align-items-center" style="text-align: center; width: 100%; font-size: 10px;">
+            <div class="footer-section" style="width: 100%;">
+                <div class="col-sm-12">
+                    <p style="color: #4a4a4a; text-align: center; font-size: 10px;">
+                        {{ page.contents[0].text | safe }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endif %}
+
+{% endfor %}
+
+
+<footer class="footer_fix" style="text-align: center;argin-top:1.6rem">
+    <p class="footer-text" style="color: gray; font-size: x-small; justify-content: center; margin-top: 10px;">
+        <strong><a href="https://github.com/fr-cm/interfaccia">created by interfaccia of F.CAMASSA</a></strong>
+
+    </p>
+</footer>
+
+<!-- Javascript  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Forces plotly graph resize given the presence of a bug
+        const graphSelector = document.querySelector('.form-select');
+        if (graphSelector) {
+            const initialValue = graphSelector.value;
+            updateDisplay(graphSelector.closest('.page-menu').id, initialValue);
+        }
+
+        // listener for navbar
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(function(element) {
+            element.addEventListener('click', function(event) {
+                var subMenu = this.nextElementSibling;
+                if (subMenu && subMenu.classList.contains('dropdown-menu')) {
+                    // closing delay sub-menu
+                    event.preventDefault();
+                    event.stopPropagation();
+                    // hide sub-menu
+                    subMenu.classList.toggle('show');
+                } else {
+                    // closing menu
+                    var navbarCollapse = document.querySelector('.navbar-collapse');
+                    var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                        toggle: false
+                    });
+                    bsCollapse.hide();
+                }
+            });
+        });
+
+        // listener sub-menu
+        document.querySelectorAll('.dropdown-menu .dropdown-item').forEach(function(element) {
+            element.addEventListener('click', function() {
+                // closing menu
+                var navbarCollapse = document.querySelector('.navbar-collapse');
+                var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                    toggle: false
+                });
+                bsCollapse.hide();
+            });
+        });
+
+        // listener tab Bootstrap
+        document.addEventListener('shown.bs.tab', function (event) {
+            var activePane = document.querySelector('.tab-pane.active');
+            var plotElements = activePane.querySelectorAll('.js-plotly-plot');
+            plotElements.forEach(function(plotElement) {
+                Plotly.Plots.resize(plotElement);
+            });
+        });
+    });
+
+    function updateDisplay(pageId, selectedId) {
+        // PupdateDisplay for dropdown menu of page_menu
+        let contentRow = document.getElementById('content-row-' + pageId);
+
+        const allContent = contentRow.querySelectorAll('.row');
+
+        // hide content
+        allContent.forEach(function(content) {
+            content.style.display = 'none';
+        });
+
+        // show only selected content
+        const selectedContent = document.getElementById(selectedId);
+        if (selectedContent) {
+            selectedContent.style.display = 'flex';  // Usa flex per mantenere l'allineamento
+
+            // delay content
+            setTimeout(function() {
+                const plotElements = selectedContent.querySelectorAll('.js-plotly-plot');
+                plotElements.forEach(function(plotElement) {
+                    Plotly.Plots.resize(plotElement);
+                });
+            }, 100); // Adjust delay as needed
+        }
+    }
+
+    // function to convert dataplot in CSV
+    function plotlyToCSV(plotData) {
+        let csv = 'x,y\n';
+        plotData.forEach(function(trace) {
+            for (let i = 0; i < trace.x.length; i++) {
+                csv += trace.x[i] + ',' + trace.y[i] + '\n';
+            }
+        });
+        return csv;
+    }
+
+    // function cvs download
+    function downloadCSV(plotId) {
+        // take ID plot
+        let plot = document.getElementById(plotId).querySelector('.js-plotly-plot');
+        if (plot) {
+            let plotData = plot.data;
+
+            // convert data in CSV
+            let csv = plotlyToCSV(plotData);
+
+            // blob creation
+            let blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            let url = URL.createObjectURL(blob);
+
+            // download link creation
+            let a = document.createElement('a');
+            a.href = url;
+            a.download = plotId + '_data.csv';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        } else {
+            console.error('Plot not found for ID:', plotId);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // click listener
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                const offset = document.querySelector('.navbar').offsetHeight;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
