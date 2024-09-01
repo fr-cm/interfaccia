@@ -73,6 +73,9 @@ chart_4, table_4 = automatic(
     yaxis_title='Y Axis',
     note='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat ipsum dictum placerat eleifend.'
 )
+#add more charts and DF
+
+
 #######################################################################################################################
 ###################################              "Creation of charts and tables          ##############################
 #######################################################################################################################
@@ -138,7 +141,10 @@ data = {  # data is the container where the dashboard filling data is stored.
                  "plot": chart_3,  # unique name of chart
                  "data": table_3,  # unique name of table
                  'display': 'none'  # first content of page_manù must be 'block' the other, must be 'none'
-                 }]
+                 },
+            # add more contents
+            
+            ]
         },
 
         {
@@ -180,6 +186,7 @@ data = {  # data is the container where the dashboard filling data is stored.
                          "</p>",
                  }]
         },
+        # add more pages
         {
             'id': 'footer',# id connect
             'type': 'footer',#footer
