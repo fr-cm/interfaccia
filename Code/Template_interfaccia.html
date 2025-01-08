@@ -805,6 +805,15 @@ h2 {
                                 {{ content.data | safe }}
                             </div>
                         </div>
+                         {% elif content.type == 'plot_plot' %}
+                        <div class=" col-sm-12 col-md-6">
+                            {{ content.plot | safe }}
+                        </div>
+                        <div class="col-sm-12 col-md-5">
+                            <div class=" col-sm-12 col-md-6">
+                                {{ content.plot | safe }}
+                            </div>
+                        </div>
                         {% elif content.type == 'plot_table_download' %}
                         <div class=" col-sm-12 col-md-7">
                             {{ content.plot | safe }}
