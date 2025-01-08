@@ -714,6 +714,13 @@ h2 {
                         <div class="download">
                             <button onclick="downloadCSV('{{ content.id }}')">Download</button>
                         </div>
+                       {% elif content.type == 'plot_plot' %}
+                        <div class=" col-sm-12 col-md-6">
+                            {{ content.plot1 | safe }}
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                                {{ content.plot2 | safe }}
+                            </div>
                         {% elif content.type == 'plot_download' %}
                         <div class=" graph col-sm-12 col-md-12" style="width:100%">
                             {{ content.plot | safe }}
@@ -809,8 +816,7 @@ h2 {
                         <div class=" col-sm-12 col-md-6">
                             {{ content.plot1 | safe }}
                         </div>
-                        <div class="col-sm-12 col-md-5">
-                            <div class=" col-sm-12 col-md-6">
+                        <div class="col-sm-12 col-md-6">
                                 {{ content.plot2 | safe }}
                             </div>
                         </div>
