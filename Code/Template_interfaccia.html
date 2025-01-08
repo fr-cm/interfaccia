@@ -807,11 +807,11 @@ h2 {
                         </div>
                          {% elif content.type == 'plot_plot' %}
                         <div class=" col-sm-12 col-md-6">
-                            {{ content.plot | safe }}
+                            {{ content.plot1 | safe }}
                         </div>
                         <div class="col-sm-12 col-md-5">
                             <div class=" col-sm-12 col-md-6">
-                                {{ content.plot | safe }}
+                                {{ content.plot2 | safe }}
                             </div>
                         </div>
                         {% elif content.type == 'plot_table_download' %}
