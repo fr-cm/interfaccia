@@ -31,15 +31,15 @@ display is set to none.
 
 
 ## Desktop Version (3 Images)
-1. ![Desktop Example 1]([path/to/desktop-screenshot1.png](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/d_1.png))
-2. ![Desktop Example 2]([path/to/desktop-screenshot2.png](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/d_2.png))
-3. ![Desktop Example 3]([path/to/desktop-screenshot3.png](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/d_3.png))
+1. ![Desktop Example 1]([https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/d_1.png])
+2. ![Desktop Example 2]([https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/d_2.png])
+3. ![Desktop Example 3]([https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/d_3.png])
 
 ---
 
 ## Mobile Version (2 Images)
-1. ![Mobile Example 1]([path/to/mobile-screenshot1.png](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/s_2.png))
-2. ![Mobile Example 2]([path/to/mobile-screenshot2.png](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/s_2.1.png))
+1. ![Mobile Example 1]([https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/s_2.png])
+2. ![Mobile Example 2]([https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/s_2.1.png])
 
 
 
