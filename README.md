@@ -8,6 +8,40 @@ automatic download links for CSV files, allowing users to download data without 
 for server storage. Additionally, it addresses the issue of resizing Plotly charts when 
 display is set to none.
 
+---
+
+## Features
+
+1. **Modular Dashboard Creation**  
+   Easily create multiple pages with minimal Python code.
+
+2. **Automatic Chart and Table Generation**  
+   Automate repetitive tasks like chart and table creation, streamlining your workflow.
+
+3. **Simulated Interactivity**  
+   No need for advanced frameworks — simulate UI changes with a static HTML approach.
+
+4. **CSV Download Links**  
+   Provide downloadable CSV files for your data. Users can download them directly without server-side file storage.
+
+5. **Fixed Chart Resize Bug**  
+   Automatically handle resizing issues when `display` is set to `none`.
+
+---
+
+
+## Desktop Version (3 Images)
+1. ![Desktop Example 1]([path/to/desktop-screenshot1.png](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/d_1.png))
+2. ![Desktop Example 2]([path/to/desktop-screenshot2.png](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/d_2.png))
+3. ![Desktop Example 3]([path/to/desktop-screenshot3.png](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/d_3.png))
+
+---
+
+## Mobile Version (2 Images)
+1. ![Mobile Example 1]([path/to/mobile-screenshot1.png](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/s_2.png))
+2. ![Mobile Example 2]([path/to/mobile-screenshot2.png](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/s_2.1.png))
+
+
 
 # TO DO 
 
