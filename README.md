@@ -38,7 +38,7 @@ display is set to none.
 ---
 
 ## Mobile Version 
-1. ![Mobile Example 1](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/S_2.png)
+1. ![Mobile Example 1](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/s_1.png)
 2. ![Mobile Example 2](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/s_2.1.png)
 
 
