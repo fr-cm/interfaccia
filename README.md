@@ -32,13 +32,13 @@ display is set to none.
 
 ## Desktop Version 
 1. ![Desktop Example 1](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/d_1.png)
-2. ![Desktop Example 2](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/d_2.png)
+2. ![Desktop Example 2](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/D_2.png)
 3. ![Desktop Example 3](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/d_3.png)
 
 ---
 
 ## Mobile Version 
-1. ![Mobile Example 1](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/s_2.png)
+1. ![Mobile Example 1](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/S_2.png)
 2. ![Mobile Example 2](https://raw.githubusercontent.com/fr-cm/interfaccia/refs/heads/main/Tutorial/img/example/s_2.1.png)
 
 
